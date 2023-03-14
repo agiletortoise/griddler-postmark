@@ -34,9 +34,9 @@ module Griddler
         }
       end
 
-      private
-
       attr_reader :params
+
+      private
 
       def headers
         Array(@params[:Headers]).inject({}) do |hash, header|
